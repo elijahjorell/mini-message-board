@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+    div.message-board
+      each message in data.messages
+        div.message-container
+          div.message-header
+            strong= message.user 
+            span= ' posted on ' + message.added
+          div.message-text
+            = message.text
+        div.message-divider
+      form(action='/new' method='POST')
+        textarea(autofocus name='messageText' placeholder='Enter message' required rows=4  )
+        div.post-as-container
+          div.post-as-container-textarea-container
+            textarea(name='nameText' placeholder='Enter name' required rows=1 )= data.user
+          button(name='postMessageButton', type='submit') Post
+        

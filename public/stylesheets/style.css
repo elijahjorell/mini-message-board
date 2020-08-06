@@ -1,0 +1,91 @@
+html {
+  background-color: lightgrey;
+}
+
+body {
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: auto;
+  min-height: 100vh;
+  max-width: 1280px;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+button[name=postMessageButton] {
+  background-color: #2ea44f;
+  color: #fff;
+  border: 1px solid rgba(27,31,35,.15);
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 9.5px 20px;
+}
+
+button[name=postMessageButton]:hover {
+  background-color: #2B994A;
+  cursor: pointer;
+}
+
+.message-board {
+  min-width: 200px;
+}
+
+.message-container {
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+}
+
+.message-header {
+  background-color: #f6f8fa;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #d1d5da;
+  padding: 13px 10px;
+}
+
+.message-text {
+  align-items: center;
+  display: flex;
+  padding: 13px 10px;
+}
+
+.message-divider {
+  border-right: 1px solid #d1d5da;
+  height: 16px;
+  width: 16px;
+}
+
+.post-as-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.post-as-container-textarea-container {
+  align-items: center;
+  display: flex;
+  min-width: 30%;
+}
+
+textarea {
+  background-color: #fafbfc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+textarea:focus {
+  background-color: white;
+  outline: none;
+  box-shadow: 0px 0px 0px 3px rgba(3, 102, 214, .3);
+}
